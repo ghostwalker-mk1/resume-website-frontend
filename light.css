@@ -1,0 +1,122 @@
+@import url('common_style.css');
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+/* Additional styles specific to light mode */
+/* ... (light mode specific styles) ... */
+
+.bold {
+  font-family: AnonymousProB;
+  color: var(--text-color-light);
+}
+
+.italic {
+  font-family: AnonymousProI;
+  color: rgb(--alt-text-color-light);
+}
+
+li {
+  color: var(--text-color-light);
+}
+
+.social {
+  color: var(--text-color-light);
+  margin-top: -1px;
+}
+
+a:hover {
+  color: var(--cursor-color-light);
+}
+
+.button button {
+  font-family: AnonymousPro;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
+  backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color-light);
+  border-left: 2px solid var(--border-color-light);
+  border-top: 2px solid var(--border-color-light);
+  transition: all .5s;
+  box-shadow: -2px -2px 2px rgba(53, 57, 53, 0.90);
+  transform: scale(1.2);
+  padding: 5px;
+}
+
+.button button:hover {
+  background-color: var(--hover-color-light);
+  transform: scale(1.3);
+}
+
+#profile {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
+  backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color-light);
+  border-left: 4px solid var(--border-color-light);
+  border-top: 4px solid var(--border-color-light);
+  transition: all .5s;
+  box-shadow: -5px -5px 5px rgba(53, 57, 53, 0.90);
+  transform: scale(0.95);
+}
+
+#profile:hover {
+  background-color: var(--hover-color-light);
+  transform: scale(0.91);
+}
+
+.education:hover,
+.skills:hover,
+.experience:hover,
+.volunteering:hover,
+.additional-info:hover {
+  background-color: var(--hover-color-light);
+  transform: scale(1.020);
+}
+
+#profile h1 {
+  border-right: .15em solid var(--cursor-color-light); /* The typewriter cursor */
+  margin-right: 5px;
+  animation: blink-caret .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--cursor-color-light);
+  }
+}
+
+.education,
+.skills,
+.experience,
+.volunteering,
+.additional-info {
+  transition: all .5s;
+  margin-bottom: 20px;
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
+  backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color-light);
+  border-right: 4px solid var(--border-color-light);
+  border-bottom: 4px solid var(--border-color-light);
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(53, 57, 53, 0.90);
+}
+

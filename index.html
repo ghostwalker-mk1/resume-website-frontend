@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Milos Devic</title>
+  <link rel="stylesheet" id="stylesheet" href="light.css">
+  <link rel="shortcut icon" href="chun.gif" type="image/x-icon">
+  <link rel="icon" href="chun.gif" type="image/x-icon">
+</head>
+
+<body>
+
+  <div id="container" class="flex-container">
+    
+    <div id="overlay"></div>
+    <div id="loader"></div>
+
+    <video muted autoPlay disablePictureInPicture loop id="bg-video">
+      <source src="dest.mp4" type="video/mp4">
+    </video>
+
+    <div id="profile" class="sticky-container">
+      <h1 class="title blink-caret">Milos Devic</h1>
+      <p class="social">Email: <a href="mailto:milos@ulberta.ca">milos@ualberta.ca</a></p>
+      <p class="social">Github: <a href="https://github.com/ghostwalker-mk1">@ghostwalker-mk1</a></p>
+      <p class="social">Linkedin: <a href="https://linkedin.com/in/milos-dev">@milos-dev</a></p>
+
+      <div id="view-counter">
+        <div>Views: </div>
+        <div id="dataContainer"></div>
+      </div>
+
+      <div class="button">
+        <button onclick="toggleStyles()" id="toggleButton">Dark Mode</button>
+      </div>
+    </div>
+
+    <script src="light-dark_mode.js"></script>
+
+    <div id="info" class="info-container">
+
+      <!-- Sections for Education, Skills, Experience, Volunteering, and Additional Information -->
+      <section class="education">
+        <h1 class="title">Education</h1>
+        <div class="aligned-text bold">
+          <p>University of Alberta - Alberta School of Business</p>
+          <p>Edmonton, Alberta</p>
+        </div>
+        <div class="aligned-text italic">
+          <p>Bachelor of Commerce; Major in Business Technology Management</p>
+          <p>Sep. 2019 – May 2024</p>
+        </div>
+        <ul>
+          <li>
+            <div class="bold">
+              <p>Notable Coursework</p>
+            </div>
+            <ul>
+              <li>Practical Programming Methodology</li>
+              <li>Systems Development Using Advanced Software Tools</li>
+              <li>Data Base Design and Administration</li>
+              <li>Telecommunications in Business</li>
+              <li>Systems Analysis and Design</li>
+              <li>Information System Security Management</li>
+              <li>Information Systems Project Management</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h1 class="title">Skills</h1>
+        <div class="proficient">
+          <div class="bold">
+            <p>Proficient</p>
+          </div>
+          <ul>
+            <li>Python, C, SQL, Word, Excel, PowerPoint</li>
+          </ul>
+        </div>
+        <div class="familiar">
+          <div class="bold">
+            <p>Familiar</p>
+          </div>
+          <ul>
+            <li>C++, HTML/CSS, Bash, Linux, NumPy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h1 class="title">Experience</h1>
+        <div class="job">
+          <div class="aligned-text bold">
+            <p>Devic Consulting</p>
+            <p>Edmonton, Alberta</p>
+          </div>
+          <div class="aligned-text italic">
+            <p>Bookkeeper</p>
+            <p>Jan. 2020 - Present</p>
+          </div>
+          <ul>
+            <li>Create and maintain spreadsheets to organize and analyze financial information.</li>
+            <li>Maintain and update financial records, including transactions and expenses.</li>
+            <li>Monitor and track business expenses to maintain budgetary control.</li>
+            <li>Categorize and record expenses accurately.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="aligned-text bold">
+            <p>Real Canadian Superstore</p>
+            <p>Edmonton, Alberta</p>
+          </div>
+          <div class="aligned-text italic">
+            <p>Personal Shopper</p>
+            <p>Jun. 2019 - Aug. 2019</p>
+          </div>
+          <ul>
+            <li>Assisted clients with online orders.</li>
+            <li>Worked with colleagues from various departments to scan, assemble and prepare orders for loading and delivery.</li>
+            <li>Used excellent problem-solving and leadership skills to take initiative and turn average customer experiences into great ones.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="volunteering">
+        <h1 class="title">Volunteering</h1>
+        <div class="activity">
+          <div class="aligned-text bold">
+            <p>CIBC Run for the Cure</p>
+            <p>Edmonton, Alberta</p>
+          </div>
+          <div class="aligned-text italic">
+            <p>Runner / Fundraiser</p>
+            <p>Sep. 2018 - Present</p>
+          </div>
+          <ul>
+            <li>Setup and takedown of the CIBC event tent.</li>
+            <li>Coordinating CIBC team members for the walk and the run registration.</li>
+            <li>Triaged family members of CIBC employees to participate in sending e-cards for fundraising and awareness.</li>
+          </ul>
+        </div>
+        <div class="activity">
+          <div class="aligned-text bold">
+            <p>United Way One for Change</p>
+            <p>Edmonton, Alberta</p>
+          </div>
+          <div class="aligned-text italic">
+            <p>Volunteer</p>
+            <p>Sep. 2018 - Present</p>
+          </div>
+          <ul>
+            <li>Assisting with the preparation of backpacks containing necessities for men’s mental health.</li>
+            <li>Assisting with the preparation of purses containing necessities for women’s shelters.</li>
+            <li>Assembled food hampers at the food bank.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="additional-info">
+        <h1 class="title">Additional Information</h1>
+        <div class="italic">
+          <p>Certifications</p>
+        </div>
+        <ul>
+          <li>Amazon Web Services</li>
+          <ul>
+            <li>cert1</li>
+          </ul>
+        </ul>
+
+        <ul>
+          <li>freeCodeCamp</li>
+          <ul>
+            <li>cert2</li>
+          </ul>
+        </ul>
+        <div class="italic">
+          <p>Interests</p>
+        </div>
+        <ul>
+          <li>Bodybuilding, Game Development, Fine Art</li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+<script src="view_counter.js"></script>
+
+<script src="loading_screen.js"></script>
+
+</body>
+
+</html>
+
