@@ -80,7 +80,8 @@ a:hover {
 .skills:hover,
 .experience:hover,
 .volunteering:hover,
-.additional-info:hover {
+.additional-info:hover,
+.article:hover  {
   background-color: var(--hover-color-light);
   transform: scale(1.020);
 }
@@ -106,7 +107,8 @@ a:hover {
 .skills,
 .experience,
 .volunteering,
-.additional-info {
+.additional-info,
+.article  {
   transition: all .5s;
   margin-bottom: 20px;
   color: var(--text-color-light);
